@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>Titan AI</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=dege" />
+    <meta name="description" content="Titan AI" />
+    <meta name="keywords" content="Titan AI" />
+    <meta name="author" content="Titan AI" />
+    <meta content="Copyright Titan AI" name="Copyright" />
+    <meta name="robots" content="all" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="icon" href="/meta-images/logo.png" type="image/x-icon" />
+    <link rel="canonical" href="https://www.titannet.io/" />
+    <link rel="stylesheet" type="text/css" href="libs/css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="libs/css/swiper-3.4.2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/public.css?v=2023.8.19-1"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/headh5.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="header" class="header">
+        <div class="isPc" style="position: relative">
+          <img
+            class="driver-img"
+            style="position: absolute; right: 0; top: 0"
+            src="./img/home/titan.png"
+          />
+          <div
+            class="container nav-wrap"
+            style="max-width: 1400px; position: relative"
+          >
+            <!-- <img class="driver-img" style="position:absolute;right:0;top:0;" src="./img/home/titan.png"> -->
+            <div class="nav-logo">
+              <img src="logo-text.png" />
+            </div>
+            <ul class="nav-mid">
+              <!-- <li class="menu-btn" style="position: relative;">
+              <a href="https://www.titannet.io/download.html" target="_blank">Download Center</a>
+            </li> -->
+              <li class="menu-btn" style="position: relative">
+                <a href="https://t.me/TitanAI_group" target="_blank">
+                  Telegram</a
+                >
+              </li>
+              <li class="menu-btn" style="position: relative">
+                <a href="https://x.com/titan__ai" target="_blank">
+                  X</a
+                >
+              </li>
+              <li class="menu-btn" style="position: relative">
+                <a
+                  href="https://docs.titan-ai.xyz"
+                  target="_blank"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+            <div
+              class="nav-right"
+              style="padding-right: 48px; display: flex; align-items: center"
+            >
+            </div>
+          </div>
+        </div>
+        <div class="isMobile">
+          <div class="container nav-wrap">
+            <div class="nav-logo">
+              <img src="/logo-text.png" />
+            </div>
+            <div class="nav-btn">
+              <img
+                style="width: 36px; height: 36px"
+                src="img/home/icon-open.png"
+                alt="打开菜单"
+                class="iconOpen"
+              />
+            </div>
+          </div>
+          <div class="nav-layer">
+            <div class="h5-head-content">
+              <div class="h5-head-top">
+                <img class="img1" src="logo-text.png" />
+                <img class="img2 iconClose" src="./img/home/headh5-2.png" />
+              </div>
+              <div class="h5-head-list">
+                <div
+                  @click="h5openUrl('https://www.dextools.io/app/en/ether/pair-explorer/0xdb1a56e9565e9a1008deff28befa0bfc23da1193')"
+                  class="h5-head-list-item-spe"
+                >
+                  <div class="h5-head-list-item-left">
+                    <img class="h5-title-img" src="./img/home/headh5-7.png" />
+                    Chart
+                  </div>
+                </div>
+                
+                <div
+                  @click="h5openUrl('https://www.titannet.io/download.html')"
+                  class="h5-head-list-item-spe"
+                >
+                  <div class="h5-head-list-item-left">
+                    <img class="h5-title-img" src="./img/home/headh5-7.png" />
+                    Telegram
+                  </div>
+                </div>
+                <div
+                  @click="h5openUrl('https://lightpaper.titannet.io/')"
+                  class="h5-head-list-item-spe"
+                >
+                  <div class="h5-head-list-item-left">
+                    <img class="h5-title-img" src="./img/home/headh5-8.png" />
+                    X
+                  </div>
+                </div>
+
+                <div
+                  @click="h5openUrl('https://docs.titan-ai.xyz')"
+                  class="h5-head-list-item-spe"
+                >
+                  <div class="h5-head-list-item-left">
+                    <img class="h5-title-img" src="./img/home/headh5-8.png" />
+                    Documentation
+                  </div>
+                </div>
+                <!-- <div>
+                <div class="h5-head-list-item-spe" @click="setOpenid(5)" >
+                  <div class="h5-head-list-item-left">
+                    <img class="h5-title-img" src="./img/home/headh5-9.png">
+                    Ecosystem
+                  </div>
+                  <div class="h5-right-icon">
+                    <img :class="openId==5?'solutionShowactive':''" class="h5-icon-img" src="./img/home/headh5-3.png">
+                  </div>
+                </div>
+                <div class="h5-head-list-item-two" v-if="openId==5">
+                  <div @click="zw" class="h5-head-list-item-two-item">Grant Awards</div>
+                </div>
+               </div> -->
+                <div class="h5-line-sty">
+                  <div></div>
+                </div>
+                <div>
+                  <div class="h5-head-list-item-spe" @click="setOpenid(6)">
+                    <div class="h5-head-list-item-left">
+                      <img
+                        class="h5-title-img"
+                        src="./img/home/headh5-10.png"
+                      />
+                      Language
+                    </div>
+                    <div class="h5-right-icon h5-lang-sty">
+                      English
+                      <img
+                        :class="openId==6?'solutionShowactive':''"
+                        class="h5-icon-img"
+                        src="./img/home/headh5-3.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="h5-head-list-item-two" v-if="openId==6">
+                    <div
+                      class="h5-head-list-item-two-item"
+                      @click="h5openUrl('zh/index.html')"
+                    >
+                      中文
+                      <!-- <a style="color:#fff;width:100%;height:100%;" href="zh/index.html">中文</a> -->
+                    </div>
+                    <div class="h5-head-list-item-two-item">English</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="h5-bottom-line"></div>
+          </div>
+        </div>
+      </div>
+      <main id="home">
+        <section class="swiper-container" style="max-width: 1400px">
+          <div class="video-box">
+            <img
+              class="video-box-img"
+              src="./zh/img/home/Modif_video-new.gif"
+            />
+            <video
+              id="video"
+              h5-playsinline="true"
+              playsinline="true"
+              webkit-playsinline="true"
+              class="video home-video"
+              loop="true"
+              autoplay="true"
+              muted="true"
+              poster=""
+              src="img/home/video.mov"
+            ></video>
+          </div>
+          <div class="video-layer">
+            <section class="container">
+              <div class="banner-txt">
+                <!-- <div class="vis-color">One-stop shop for</div> -->
+                <div class="vis-color">DePIN Cloud Services</div>
+                <div class="banner-txt-vis-cont">
+                  <div>Matching idle community resources with global</div>
+                  <div>demand. Easily leverage the power of DePIN and</div>
+                  <div>
+                    participate in the Internet of Value. Start earning today
+                  </div>
+                  <div>with just a few clicks by joining the Titan AI</div>
+                </div>
+                <!-- <p class="title2 title2-1">We match idle community resources with global demand, making it easy for anyone to leverage the power of DePIN and participate in the construction of the Internet of Value.</p> -->
+                <div class="btn-wrap title2-1-btn" style="margin-top: 50px">
+                  <a
+                    href="https://www.dextools.io/app/en/ether/pair-explorer/0xdb1a56e9565e9a1008deff28befa0bfc23da1193"
+                    target="_blank"
+                    class="btn1"
+                    >Chart &nbsp;&nbsp;&nbsp;&nbsp;<img
+                      src="img/home/btn-bg0.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+                <div class="btn-wrap title2-1-btn" style="margin-top: 30px">
+                  <a
+                    href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x53bdd224dba478a80cb173d107a33c16bc0964cf"
+                    target="_blank"
+                    class="btn1"
+                    >Buy $TITAN &nbsp;&nbsp;&nbsp;&nbsp;<img
+                      src="img/home/btn-bg0.png"
+                      alt=""
+                      class="img"
+                  /></a>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="container box1 node-box-en">
+          <div class="row pb50">
+            <ul class="text-ul text-ul-New">
+              <li class="wow slideInUp" data-wow-duration="1.4s">
+                <div class="grid">
+                  <p class="title">Registered Nodes</p>
+                  <p class="text value-node-num value-node-num-en-top">
+                    <span id="span2">{{online_node_count}}</span>
+                  </p>
+                </div>
+              </li>
+              <li class="wow slideInUp" data-wow-duration="1.2s">
+                <div class="grid">
+                  <p class="title">Storage Space</p>
+                  <p class="text value-node-num">
+                    <span class=""
+                      >{{Math.floor(formatGb(((result.titan_disk_space ||
+                      0)+(result.titan_disk_usage || 0))/1024/1024/1024
+                      )?.split(' ')[0])}}</span
+                    >
+                    <span class="small"
+                      >{{formatGb(((result.titan_disk_space ||
+                      0)+(result.titan_disk_usage || 0))/1024/1024/1024
+                      )?.split(' ')[1]}}</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="wow slideInUp" data-wow-duration="1.4s">
+                <div class="grid">
+                  <p class="title">Unique IP</p>
+                  <p class="text value-node-num">
+                    <span class="value-node-num" id="span4"
+                      >0</span
+                    >
+                    <span class="small"> </span>
+                  </p>
+                </div>
+              </li>
+              <li class="wow slideInUp" data-wow-duration="1.4s">
+                <div class="grid">
+                  <p class="title">CPU Cores</p>
+                  <p class="text value-node-num">
+                    <span class="value-node-num" id="span3"
+                      >{{result.cpu_cores}}<span
+                        class="small"
+                        style="margin-left: 10px"
+                      ></span
+                    ></span>
+                  </p>
+                </div>
+              </li>
+              <li class="wow slideInUp" data-wow-duration="1.6s">
+                <div class="grid">
+                  <p class="title">Countries Covered</p>
+                  <p class="text value-node-num">
+                    <span class="value-node-num" id="span3"
+                      >{{countries.count}}</span
+                    >
+                  </p>
+                </div>
+              </li>
+              <!-- <li class="wow slideInUp" data-wow-duration="2s">
+                <div class="grid space-grid Information-stype">
+                  <p class="title">
+                    <a
+                      href="https://test1.titannet.io/"
+                      style="color: #999; font-size: 1.1rem"
+                      target="_blank"
+                      >Detailed Information ></a
+                    >
+                  </p>
+                </div>
+              </li> -->
+            </ul>
+          </div>
+        </section>
+        <div class="fullbg" id="what" style="padding-top: 0">
+          <section class="container box2 Networkpc-cont">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 style="margin-bottom: 30px">Titan AI Positioning</h2>
+                <h3 class="wow slideInUp p30-color" data-wow-duration="1s">
+                  <span class="green">Why?</span>
+                </h3>
+                <p class="wow slideInUp" data-wow-duration="1.5s">
+                  We are dedicated to enabling the community to become the
+                  owners of their digital resources and shape the Internet of
+                  Value together.
+                </p>
+                <h3 class="wow slideInUp p30-color" data-wow-duration="1s">
+                  <span class="green">How?</span>
+                </h3>
+                <p class="wow slideInUp" data-wow-duration="1.5s">
+                  We build an ecosystem for crowdsourcing digital resources to
+                  accelerate the decentralization of the Internet as a universal
+                  public good. We restore community digital resource ownership
+                  through a transparent, open-source and incentivized platform
+                  that enables the de-siloing of products, services, and
+                  identities that live in the digital world.
+                </p>
+                <h3 class="wow slideInUp p30-color" data-wow-duration="1s">
+                  <span class="green">What?</span>
+                </h3>
+                <p class="wow slideInUp" data-wow-duration="1.5s">
+                  As the first step, we build a DePIN platform for the
+                  aggregation of fungible digital resources, like compute,
+                  storage and bandwidth. We enable the ecosystem to utilize the
+                  full potential of their physical infrastructure and get
+                  rewarded for sharing the resources they have. The ultimate
+                  vision is to become the one-stop-shop platform for DePIN
+                  services both on the contributor and consumer side.
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="container box2 NetworkMobile-cont">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 style="margin-bottom: 30px">Titan AI Positioning</h2>
+                <h3 class="wow slideInUp p30-color p768" data-wow-duration="1s">
+                  <span class="green">Why?</span>
+                  <div @click="PositioningClick1" class="Positioning-title-img">
+                    <img
+                      :class="Positioningshow == true?'PositioningshoActive':''"
+                      src="./img/home/xiala.png"
+                    />
+                  </div>
+                </h3>
+                <p
+                  v-if="Positioningshow"
+                  class="wow slideInUp"
+                  data-wow-duration="1.5s"
+                >
+                  We are dedicated to enabling the community to become the
+                  owners of their digital resources and shape the Internet of
+                  Value together.
+                </p>
+                <h3 class="wow slideInUp p30-color p768" data-wow-duration="1s">
+                  <span class="green">How?</span>
+                  <div @click="PositioningClick2" class="Positioning-title-img">
+                    <img
+                      :class="Positioningshow1 == true?'PositioningshoActive':''"
+                      src="./img/home/xiala.png"
+                    />
+                  </div>
+                </h3>
+                <p
+                  v-if="Positioningshow1"
+                  class="wow slideInUp"
+                  data-wow-duration="1.5s"
+                >
+                  We build an ecosystem for crowdsourcing digital resources to
+                  accelerate the decentralization of the Internet as a universal
+                  public good. We restore community digital resource ownership
+                  through a transparent, open-source and incentivized platform
+                  that enables the de-siloing of products, services, and
+                  identities that live in the digital world.
+                </p>
+                <h3 class="wow slideInUp p30-color p768" data-wow-duration="1s">
+                  <span class="green">What?</span>
+                  <div @click="PositioningClick3" class="Positioning-title-img">
+                    <img
+                      :class="Positioningshow2 == true?'PositioningshoActive':''"
+                      src="./img/home/xiala.png"
+                    />
+                  </div>
+                </h3>
+                <p
+                  v-if="Positioningshow2"
+                  class="wow slideInUp"
+                  data-wow-duration="1.5s"
+                >
+                  As the first step, we build a DePIN platform for the
+                  aggregation of fungible digital resources, like compute,
+                  storage and bandwidth. We enable the ecosystem to utilize the
+                  full potential of their physical infrastructure and get
+                  rewarded for sharing the resources they have. The ultimate
+                  vision is to become the one-stop-shop platform for DePIN
+                  services both on the contributor and consumer side.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="fullbg jishuboxContent" id="Fil">
+          <section class="container box4 pc-Titan-Architectural">
+            <div class="box-title">
+              <h2 class="Architectural-pc">Titan Architecture</h2>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+              <img
+                style="width: 100%; height: auto; display: block"
+                src="./img/home/jishu-en.png"
+              />
+            </div>
+          </section>
+
+          <section class="container box4 mobile-Titan-Architectural">
+            <div class="box-title">
+              <h2 style="margin-bottom: 30px">Titan Architecture</h2>
+            </div>
+
+            <div>
+              <div>
+                <img
+                  style="
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    margin-top: 10px;
+                    margin-bottom: 60px;
+                  "
+                  src="./img/home/English2.png"
+                />
+                <div class="box-title">
+                  <h2 style="margin-bottom: 30px">Titan Application Layer</h2>
+                </div>
+                <img
+                  style="width: 100%; height: auto; display: block"
+                  src="./img/home/English1.png"
+                />
+              </div>
+              <div class="box-title" style="margin-top: 30px">
+                <p>
+                  Titan AI is a Layer 1 blockchain that coordinates the
+                  community-built fog and cloud resource network. It is powered
+                  by the Edge node container technology compatible with
+                  ultra-lightweight hardware, like cell phones or edge devices,
+                  and powerful Guardian nodes that can do heavy-lifting
+                  computation tasks. Together they are orchestrated by the
+                  Validator nodes that run consensus and scheduler tasks on the
+                  Titan Blockchain.
+                </p>
+                <p>
+                  This structure allows the provision of traditional cloud
+                  services in a decentralized and open-source environment, as
+                  well as enables new DePIN services like hot storage, CDN
+                  acceleration and Verifiable Random Functions. Titan AI
+                  also offers novel trusted storage and trusted container
+                  execution environments on top of the decentralized network.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="fullbg">
+          <section class="container box3">
+            <div class="row pb50 p10000">
+              <div class="box-title">
+                <h2 class="wow slideInUp" data-wow-duration="1s">
+                  Support Different Device and Operation Systems
+                </h2>
+                <h3 style="color: #00ff00; margin-top: 50px">Devices</h3>
+              </div>
+              <ul class="dispose-ul">
+                <li class="wow slideInUp" data-wow-duration="2.4s">
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-e5.png" alt="icon" />
+                    </div>
+                    <p class="tit">Mobile Phone</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.6s">
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-e2.png" alt="icon" />
+                    </div>
+                    <p class="tit">Personal Computer</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.3s">
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-e1.png" alt="icon" />
+                    </div>
+                    <p class="tit">Server</p>
+                  </div>
+                </li>
+
+                <li class="wow slideInUp" data-wow-duration="1.9s">
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-e3.png" alt="icon" />
+                    </div>
+                    <p class="tit">NAS</p>
+                  </div>
+                </li>
+                <li class="wow slideInUp" data-wow-duration="2.1s">
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/edg.png" alt="icon" />
+                    </div>
+                    <p class="tit">Edge Devices</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="box-title">
+                <h3 style="color: #00ff00; margin-top: 50px">
+                  Operation System
+                </h3>
+              </div>
+              <ul class="dispose-ul Operating-system">
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.3s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/Android.png" alt="icon" />
+                    </div>
+                    <p class="tit">Android</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.6s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/win.png" alt="icon" />
+                    </div>
+                    <p class="tit">Win</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.9s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/Linux.png" alt="icon" />
+                    </div>
+                    <p class="tit">Linux</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="2.1s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/mac.png" alt="Mac" />
+                    </div>
+                    <p class="tit">Mac</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="2.4s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/CLI.png" alt="CLI" />
+                    </div>
+                    <p class="tit">CLI</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="2.4s"
+                  style="width: 16.6%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/IOS.png" alt="iOS" />
+                    </div>
+                    <p class="tit">iOS</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="fullbg">
+          <section class="container box3">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 class="wow slideInUp" data-wow-duration="1s">
+                  Minimum Requirements
+                </h2>
+              </div>
+              <ul class="dispose-ul Operating-system">
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.3s"
+                  style="width: 25%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-d1.png" alt="icon-CPU" />
+                    </div>
+                    <p class="tit">CPU</p>
+                    <p class="text">1 core & above</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.6s"
+                  style="width: 25%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-d2.png" alt="icon" />
+                    </div>
+                    <p class="tit">Memory</p>
+                    <p class="text">0.5GB & above</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="1.9s"
+                  style="width: 25%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-d3.png" alt="icon" />
+                    </div>
+                    <p class="tit">Uplink Bandwidth</p>
+                    <p class="text">1Mbps & above</p>
+                  </div>
+                </li>
+                <li
+                  class="wow slideInUp"
+                  data-wow-duration="2.1s"
+                  style="width: 25%"
+                >
+                  <div class="grid">
+                    <div class="img-box">
+                      <img src="img/home/icon-d4.png" alt="icon" />
+                    </div>
+                    <p class="tit">Disk</p>
+                    <p class="text">1G & above <br /></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="fullbg Builtcontent">
+          <section class="container box6">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 class="wow slideInUp" data-wow-duration="1s">
+                  Built on Top of
+                </h2>
+              </div>
+              <ul class="com-ul">
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/fullbg1.png" />
+                  <!-- <img class="img2" src="img/home/comosimg-1-1.png" /> -->
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/fullbg2.png" />
+                  <!-- <img class="img2" src="img/home/2-1.png" /> -->
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/fullbg3.png" />
+                  <!-- <img class="img2" src="img/home/3-1.png" /> -->
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="fullbg Builtcontent">
+          <section class="container box6">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 class="wow slideInUp" data-wow-duration="1s">Investors</h2>
+              </div>
+              <ul class="com-ul">
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/Investor1.png" />
+                  <!-- <img class="img2" src="img/home/comosimg-1-1.png" /> -->
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/Investor2.png" />
+                  <!-- <img class="img2" src="img/home/2-1.png" /> -->
+                </li>
+                <li class="wow slideInUp" data-wow-duration="1.5s">
+                  <img class="img1" src="img/home/Investor3.png" />
+                  <!-- <img class="img2" src="img/home/3-1.png" /> -->
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <div class="fullbg Builtcontent">
+          <section class="container box6">
+            <div class="row pb50">
+              <div class="box-title">
+                <h2 class="wow slideInUp" data-wow-duration="1s">Partners</h2>
+              </div>
+              <div class="slide-box">
+                <div class="slide-box1">
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://lilypad.tech/')"
+                  >
+                    <img class="img1" src="img/home/Partners1.png" />
+                    <img class="img2" src="img/home/Partners6.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://fansland.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners2.png" />
+                    <img class="img2" src="img/home/Partners7.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.ebunker.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners3.png" />
+                    <img class="img2" src="img/home/Partners8.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.edgematrix.pro')"
+                  >
+                    <img class="img1" src="img/home/Partners4.png" />
+                    <img class="img2" src="img/home/Partners9.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.glacier.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners5.png" />
+                    <img class="img2" src="img/home/Partners10.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.filstation.app/')"
+                  >
+                    <img class="img1" src="img/home/Partners11.png" />
+                    <img class="img2" src="img/home/Partners12.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://lilypad.tech/')"
+                  >
+                    <img class="img1" src="img/home/Partners1.png" />
+                    <img class="img2" src="img/home/Partners6.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://fansland.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners2.png" />
+                    <img class="img2" src="img/home/Partners7.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.ebunker.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners3.png" />
+                    <img class="img2" src="img/home/Partners8.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.edgematrix.pro')"
+                  >
+                    <img class="img1" src="img/home/Partners4.png" />
+                    <img class="img2" src="img/home/Partners9.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.glacier.io/')"
+                  >
+                    <img class="img1" src="img/home/Partners5.png" />
+                    <img class="img2" src="img/home/Partners10.png" />
+                  </div>
+                  <div
+                    class="slide-item"
+                    @click="parClick('https://www.filstation.app/')"
+                  >
+                    <img class="img1" src="img/home/Partners11.png" />
+                    <img class="img2" src="img/home/Partners12.png" />
+                  </div>
+                </div>
+              </div>
+              <!-- <ul class="com-ul-par">
+              <li @click="parClick('https://lilypad.tech/')" class="wow slideInUp" data-wow-duration="1.5s">
+                <img class="img1" src="img/home/partner3.png" />
+                <img class="img2" src="img/home/partner1.png" />
+              </li>
+              <li @click="parClick('https://fansland.io/')" class="wow slideInUp" data-wow-duration="1.5s">
+                <img class="img1" src="img/home/partner4.png" />
+                <img class="img2" src="img/home/partner2.png" />
+              </li>
+            </ul> -->
+            </div>
+          </section>
+        </div>
+        <div class="cookies-box" v-if="showCookie">
+          <img class="cookie-img" src="./img/home/Cookie-img.png" />
+          <div class="cookie-text">
+            By clicking “Accept all cookies”, you agree Stack Exchange can store
+            cookies on your device and disclose information in accordance with
+            our
+            <span @click="privacy" class="cookie-click">Cookie Policy.</span>
+          </div>
+          <div class="cookie-btn">
+            <div class="accept" @click="hideCookie">Accept all cookies</div>
+            <div class="turn-down" @click="hideCookie">Reject all cookies</div>
+          </div>
+        </div>
+      </main>
+      <div class="pop-layer">
+        <div class="make-win-box">
+          <span class="tishi">Under Construction</span>
+        </div>
+      </div>
+
+      <div class="pop-layer1" v-if="zwshow">
+        <div class="make-win-box1">
+          <span class="tishi1">coming soon</span>
+        </div>
+      </div>
+
+      <footer id="footer">
+        <div class="box1">
+          <div class="container">
+            <div class="wrap">
+              <div class="col-mid">
+                <dl>
+                  <dt>Chart</dt>
+                  <dd>
+                    <a
+                      href="https://www.dextools.io/app/en/ether/pair-explorer/0xdb1a56e9565e9a1008deff28befa0bfc23da1193"
+                      target="_blank"
+                      >Dextools</a
+                    >
+                  </dd>
+                  <dd>
+                    <a
+                      href="https://dexscreener.com/ethereum/0xdb1a56e9565e9a1008deff28befa0bfc23da1193"
+                      target="_blank"
+                      class=""
+                      >Dexscreener</a
+                    >
+                  </dd>
+                </dl>
+                <dl>
+                  <dt>E-mail</dt>
+                  <dd>
+                    <a href="mailto:team@titan-ai.xyz">team@titan-ai.xyz</a>
+                  </dd>
+                </dl>
+              </div>
+              <div class="col-right">
+                <dl>
+                  <dt>Community</dt>
+                  <dd>
+                    <!-- <span
+                      ><a
+                        href="https://discord.com/invite/titannet"
+                        target="_blank"
+                        ><img src="img/home/discord.png" alt="" /></a
+                    ></span> -->
+                    <span
+                      ><a
+                        href="https://x.com/titan__ai"
+                        target="_blank"
+                        ><img src="img/home/icon-foot-2.png" alt="" /></a
+                    ></span>
+                    <!-- <span
+                      ><a
+                        href="https://medium.com/@titannetwork/"
+                        target="_blank"
+                        ><img src="img/home/medium.png" alt="" /></a
+                    ></span>
+                    <span
+                      ><a href="https://linktr.ee/titannet.io" target="_blank"
+                        ><img src="img/home/icon-foot-6.png" alt="" /></a
+                    ></span>
+                    <span
+                      ><a
+                        href="https://github.com/Titannet-dao/Community/discussions"
+                        target="_blank"
+                        ><img src="img/home/github.png" alt="" /></a
+                    ></span> -->
+                    <span
+                      ><a href="https://t.me/TitanAI_group" target="_blank"
+                        ><img src="img/home/tg-1000.png" alt="" /></a
+                    ></span>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="libs/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="libs/js/wow.min.js"></script>
+<script src="libs/js/day.js"></script>
+<script src="libs/js/vue.js"></script>
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-X48GDX08RS"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-X48GDX08RS");
+</script>
+<script>
+  const formatGb = (gb) => {
+    var kb = gb * 1024 * 1024;
+    if (kb < 1024) return kb.toFixed(2) + " KB";
+    if (kb >= 1024 && kb < 1024 * 1024) return (kb / 1024).toFixed(2) + " MB";
+    if (kb >= 1024 * 1024 && kb < 1024 * 1024 * 1024)
+      return (kb / 1024 / 1024).toFixed(2) + " GB";
+    return (kb / 1024 / 1024 / 1024).toFixed(2) + " TB";
+    // if (gb > 1024) return (gb/1024).toFixed(2) + 'TB';
+    // if (gb/1024)
+  };
+  // const baseUrl = 'http://120.79.221.36:8099'
+  const baseUrl = "https://api-titan-quest.container1.titannet.io";
+  const getUrlParams = (name) => {
+    const reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+    const r = window.location.search.substr(1).match(reg);
+    if (r != null) return unescape(r[2]);
+    return null;
+  };
+  var app = new Vue({
+    el: "#app",
+    data: {
+      message: "Hello Vue!",
+      formatGb: formatGb,
+      result: {},
+      countries: {},
+      online_node_count: 0,
+      zwshow: false,
+      solutionShow: false,
+      joinShow: false,
+      Positioningshow: false,
+      Positioningshow1: false,
+      Positioningshow2: false,
+      t: Date.now(),
+      openId: -1,
+      showCookie: false,
+    },
+    methods: {
+      hideCookie() {
+        localStorage.showCookie = true;
+        this.showCookie = false;
+      },
+      privacy() {
+        window.open("./privacy/index.html");
+      },
+      MediaKit() {
+        window.open(location.origin + "/media-kit");
+      },
+      setOpenid(id) {
+        if (id == this.openId) {
+          this.openId = -1;
+          return;
+        }
+        this.openId = id;
+      },
+      h5openUrl(url) {
+        location.href = url;
+      },
+      parClick(url) {
+        window.open(url);
+      },
+      setLang() {
+        localStorage.myLang = "en";
+        window.open(location.origin + "/airdrops/");
+        // window.open('https://titannet.io/airdrops/')
+      },
+      PositioningClick1() {
+        this.Positioningshow = !this.Positioningshow;
+        this.Positioningshow1 = false;
+        this.Positioningshow2 = false;
+      },
+      PositioningClick2() {
+        this.Positioningshow1 = !this.Positioningshow1;
+        this.Positioningshow = false;
+        this.Positioningshow2 = false;
+      },
+      PositioningClick3() {
+        this.Positioningshow2 = !this.Positioningshow2;
+        this.Positioningshow = false;
+        this.Positioningshow1 = false;
+      },
+      solutionMethods() {
+        this.solutionShow = !this.solutionShow;
+        this.joinShow = false;
+      },
+      joinMethods() {
+        this.joinShow = !this.joinShow;
+        this.solutionShow = false;
+      },
+      zw() {
+        this.zwshow = true;
+        setTimeout(() => {
+          this.zwshow = false;
+        }, 2000);
+      },
+      LightpaperClick() {
+        var that = this;
+        $.ajax({
+          type: "get",
+          url:
+            "https://api-test1.container1.titannet.io" +
+            "/api/v1/storage/open_asset?user_id=titan17ljevhtqu4vx6y7k743jyca0w8gyfu2466e8x3&asset_cid=bafybeihf5fvtdy7ho3y2th2osqfvkbqwotejkqqj5dnt42lvsyc3f2i564",
+          // data: JSON.stringify({
+          //   user_id:''
+          // }),
+          dataType: "JSON",
+          headers: {
+            lang: that.lang == "zh" ? "cn" : "en",
+          },
+          contentType: "application/json",
+          success: function (data) {
+            window.open(data.data.url?.[0]);
+            console.log(data);
+          },
+        });
+      },
+    },
+    mounted() {
+      $("#app").show();
+      console.log(localStorage.showCookie, "9999");
+      if (!localStorage.showCookie) {
+        this.showCookie = true;
+      }
+      //   document.addEventListener("WeixinJSBridgeReady",function() {
+      //   document.getElementById('video').play();
+      // }, false);
+      const that = this;
+      const code = getUrlParams("code");
+      if (code) {
+        setTimeout(() => {
+          $.ajax({
+            type: "post",
+            url: baseUrl + "/api/v1/brows_official_website/callback",
+            data: JSON.stringify({
+              code: code,
+            }),
+            dataType: "JSON",
+            headers: {
+              lang: that.lang == "zh" ? "cn" : "en",
+            },
+            contentType: "application/json",
+            success: function (data) {},
+          });
+        }, 30 * 1000);
+      }
+      $.ajax({
+        type: "get",
+        url: "https://api-test1.container1.titannet.io/api/v2/get_index_info",
+        dataType: "json",
+        success: function (data) {
+          if (data.code === 0) {
+            that.result = data.data;
+          }
+        },
+      });
+      $.ajax({
+        type: "get",
+        url: "https://api-test1.container1.titannet.io/api/v1/country_count",
+        dataType: "json",
+        success: function (data) {
+          if (data.code === 0) {
+            that.countries = data.data;
+          }
+        },
+      });
+      // https://web.titannet.io/api/v2/get_nodes_days?user_id=&from=2023-09-12&to=2023-09-19
+      $.ajax({
+        type: "get",
+        url:
+          "https://api-test1.container1.titannet.io/api/v2/get_nodes_days?user_id=" +
+          "" +
+          "&from=" +
+          dayjs().format("YYYY-MM-DD") +
+          "&to=" +
+          dayjs().format("YYYY-MM-DD"),
+        dataType: "json",
+        success: function (data) {
+          if (data.code === 0) {
+            that.online_node_count =
+              data.data?.series_data[0]?.total_node_count;
+          }
+        },
+      });
+      setInterval(() => {
+        this.t = Date.now();
+      }, 10000);
+    },
+  });
+
+  $(document).ready(function () {
+    new WOW().init();
+    // 移动端菜单事件
+    $(document).on("click", ".iconOpen", function () {
+      // $(this).find('i').toggleClass('icon-close');
+      $(".nav-layer").addClass("navShow");
+    });
+    $(document).on("click", ".iconClose", function () {
+      // $(this).find('i').toggleClass('icon-close');
+      $(".nav-layer").removeClass("navShow");
+    });
+
+    $(".nav-mid li a").click(function () {
+      $("html, body").animate(
+        {
+          scrollTop: $($(this).attr("href")).offset().top + "px",
+        },
+        {
+          duration: 500,
+          easing: "swing",
+        }
+      );
+      return false;
+    });
+    // 正在建设中
+    $(document).on("click", ".pop", function () {
+      $(".pop-layer").fadeIn();
+      setTimeout(function () {
+        $(".pop-layer").fadeOut();
+      }, 2000);
+    });
+
+    // Roadmap点击切换
+    $(".roadmap-ul li").on("click", function () {
+      var index = $(this).index() - 1;
+      if (index != -1 && index != 8) {
+        $(this).addClass("active").siblings().removeClass("active");
+        $(".layer-cont > div").eq(index).show().siblings().hide();
+      } else if (index == 8) {
+        $(".roadmap-ul li")
+          .eq(5)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+        $(".layer-cont > div").eq(4).show().siblings().hide();
+        $(".li1-4").hide();
+        $(".li5-8").show();
+      } else if (index == -1) {
+        $(".roadmap-ul li")
+          .eq(1)
+          .addClass("active")
+          .siblings()
+          .removeClass("active");
+        $(".layer-cont > div").eq(0).show().siblings().hide();
+        $(".li1-4").show();
+        $(".li5-8").hide();
+      }
+    });
+
+    // 动态数字
+    // timename = setTimeout(function () {
+    //   var num = 56228;
+    //   var t1 = setInterval(function () {
+    //     num++;
+    //     var span1 = document.getElementById("span1");
+    //     span1.innerText = num;
+    //     if (num == 56454) {
+    //       clearInterval(t1);
+    //     }
+    //   }, 10);
+    //   var num2 = 108;
+    //   var t2 = setInterval(function () {
+    //     num2++;
+    //     var span2 = document.getElementById("span2");
+    //     span2.innerText = num2;
+    //     if (num2 == 323) {
+    //       clearInterval(t2);
+    //     }
+    //   }, 10);
+    //   var num3 = 5190;
+    //   var t3 = setInterval(function () {
+    //     num3++;
+    //     var span3 = document.getElementById("span3");
+    //     span3.innerText = num3;
+    //     if (num3 == 5432) {
+    //       clearInterval(t3);
+    //     }
+    //   }, 10);
+    //   var num4 = 456191;
+    //   var t4 = setInterval(function () {
+    //     num4++;
+    //     var span4 = document.getElementById("span4");
+    //     span4.innerText = num4;
+    //     if (num4 == 456433) {
+    //       clearInterval(t4);
+    //     }
+    //   }, 10);
+    // }, 1000)
+  });
+</script>

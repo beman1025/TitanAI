@@ -1,0 +1,124 @@
+.h5-head-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  align-items: center;
+  padding: 16px;
+}
+.h5-head-top .img1 {
+  width: 120px;
+  height: 32px;
+}
+.h5-head-top .img2 {
+  width: 20px;
+  height: 20px;
+}
+.h5-head-list {
+  margin-top: 10px;
+  color: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+}
+.h5-head-list-item {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h5-right-icon .h5-icon-img {
+  width: 16px;
+  height: 16px;
+  transition: 0.4s;
+}
+.h5-head-list-item-spe {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.h5-head-list-item-left {
+  display: flex;
+  align-items: center;
+}
+.h5-head-list-item-left .h5-title-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 6px;
+}
+.h5-lang-sty {
+  display: flex;
+  align-items: center;
+  color: #6d6d6d;
+  font-weight: 400;
+}
+.h5-lang-sty .h5-icon-img {
+  margin-left: 5px;
+}
+.h5-line-sty {
+  padding: 24px 20px 23px;
+}
+.h5-line-sty > div {
+  height: 1px;
+  background: #373737;
+}
+.h5-head-list .h5-head-list-item:hover {
+  background: #1f1f1f;
+}
+.h5-head-list .h5-head-list-item-spe:hover {
+  background: #1f1f1f;
+}
+.h5-head-list-item-two {
+  padding: 10px 20px 10px 46px;
+  background: #121212;
+}
+.he-two-small-title {
+  height: 36px;
+  color: #787878;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.h5-head-list-item-two-item {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}
+.h5-head-two-line {
+  margin-top: 6px;
+  background: #373737;
+  height: 1px;
+  margin-bottom: 5px;
+}
+.h5-bottom-line {
+  position: fixed;
+  bottom: 8px;
+  width: 100%;
+  width: 134px;
+  height: 5px;
+  border-radius: 100px 100px 100px 100px;
+  background: #fff;
+  left: 50%;
+  margin-left: -67px;
+}
+.h5-second-level {
+  display: flex;
+}
+.h5-second-level-left {
+  width: 2px;
+  height: 100px;
+  background: #00ff00;
+  margin-right: 20px;
+  margin-top: 16px;
+}
+.h5-second-level-left1 {
+  width: 2px;
+  height: 55px;
+  background: #00ff00;
+  margin-right: 20px;
+  margin-top: 18px;
+}
+.navShow {
+  overflow-y: auto;
+}
